@@ -7,7 +7,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "webpack --mode=production",
-    "start": "webpack-dev-server --mode=development --devtool eval-source-map --open"
+    "start": "webpack-dev-server --mode=development --devtool eval-source-map --open",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,9 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "*",
     "css-loader": "^5.2.6",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.23.4",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",
